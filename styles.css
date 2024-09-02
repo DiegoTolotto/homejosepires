@@ -1,0 +1,476 @@
+/* Estilos Globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(248, 246, 231);
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+/* Cabeçalho */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(248, 246, 231);
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #333;
+    padding: 2%;
+    width: 40%;
+}
+
+.classroom-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav {
+    width: 10%;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: flex-start;
+    list-style-type: none;
+}
+
+
+.nav ul li a img {
+    height: 40px;
+    width: 40px;
+
+}
+
+/* Seção do Banner Principal */
+.banner-principal {
+    position: relative;
+    width: 100%;
+    height: 85vh; /* Define a altura como 50% da altura da viewport, pode ajustar conforme necessário */
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.banner-principal .slides {
+    display: flex;
+    position: relative;
+    height: 100%; /* Faz com que as slides preencham toda a altura do banner */
+}
+
+.banner-principal .slide {
+    flex: 1 0 100%;
+    position: relative;
+    height: 100%; /* Garante que cada slide tenha a altura do banner */
+}
+
+.banner-principal .slide img {
+    width: 100%;    
+    height: 100%; /* Faz com que a imagem preencha toda a altura do slide */
+    display: block;
+}
+
+.banner-principal .slogan {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.banner-principal .slogan h1 {
+    font-size: 2em;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.banner-principal .indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.banner-principal .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.banner-principal .dot:hover, .banner-principal .dot.active {
+    background-color: #717171;
+}
+
+
+/* Mensagem aos Pais */
+.message-parents {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px;
+    color: white;
+}
+
+.message-image {
+    height: 350px;
+    max-width: 100%;
+
+}
+
+.message-image img {
+    max-width: 100%;
+    height: 350px;
+    width: 500px;
+}
+
+/* Atividades Semanais */
+.weekly-activities {
+    background-color: #0073E6;
+    color: white;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.weekly-activities h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.weekly-activities .activity {
+    background-color: white;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.weekly-activities .activity-date p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.weekly-activities .activity-date span {
+    font-size: 14px;
+    color: #777;
+}
+
+.weekly-activities .activity-content p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.view-all-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #FF4C4C;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Horários */
+.schedule {
+    padding: 40px 30px;
+    background-color: #FFF4E6;
+    text-align: center;
+    margin: 2.5% 0 2.5% 0;
+}
+
+.schedule h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.schedule p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.weekdays {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.weekday {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 25%;
+    margin: 0 4% 0 4%;
+    border: 2px solid black;
+    box-shadow: 20px 20px;
+}
+
+
+.weekday img {
+    height: 75px;
+    padding: 5%;
+}
+
+.weekday p {
+    margin: 5px 0;
+}
+
+.download-schedule-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #0073E6;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+/*Nossas Unidades*/
+.recent-posts {
+    text-align: left;
+    padding: 20px;
+    background-color: #E3EDFC;
+}
+
+.recent-posts h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #001A47;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.recent-posts h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #D7263D;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+.post-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.post-card {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(33.333% - 20px);
+    display: flex;
+    flex-direction: column;
+}
+
+.post-image-link {
+    display: block;
+    width: 100%;
+}
+
+.post-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.post-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.post-content h3 {
+    font-size: 18px;
+    color: #001A47;
+    margin-bottom: 10px;
+}
+
+.post-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    font-size: 14px;
+    color: #666666;
+}
+
+.post-meta span {
+    display: flex;
+    align-items: center;
+}
+
+.post-meta .likes:hover {
+    cursor: pointer;
+    color: #D7263D;
+}
+
+.post-meta .views,
+.post-meta .comments,
+.post-meta .likes {
+    margin-right: 10px;
+}
+
+
+
+
+/* Rodapé */
+.footer {
+    background-color: #0073E6;
+    color: white;
+    padding: 60px 30px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex: 1;
+    padding-left: 30px;
+}
+
+
+.footer-content h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.contact-form {
+    margin-top: 20px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+}
+
+.contact-form button {
+    background-color: #FF4C4C;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #e04a4a;
+}
+
+.nav-footer {
+    display: none;
+}
+
+/* Rodapé Inferior */
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 14px;
+}
+
+
+/* Responsividade: exibir o menu hambúrguer e ocultar os links de navegação */
+@media (max-width: 768px) {
+
+
+    .header-left {
+        width: 100%;
+    }
+
+    .nav {
+        width: 50%;
+    }
+
+    .custom-img1 {
+        content: url('img/banner/bannermedio1.png');
+    }
+
+    .custom-img2 {
+        content: url('img/banner/bannermedio2.png');
+    }
+
+    .custom-img3 {
+        content: url('img/banner/bannermedio3.png');
+    }
+
+    .custom-img4 {
+        content: url('img/banner/bannermedio4.png');
+    }
+
+    .message-parents {
+        display: none;
+    }
+
+    .weekdays {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 80%;
+    }
+
+    .weekday {
+        width: 100%;
+        margin-bottom: 20%;
+    }
+
+    .post-container {
+        display: flex;
+        flex-direction: column;
+     }
+
+     .post-card {
+        width: 100%;
+     }
+
+     .contact-form {
+        margin-right: 15%;
+     }
+
+}
+
