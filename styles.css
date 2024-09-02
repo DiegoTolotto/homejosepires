@@ -37,7 +37,7 @@ h1, h2, h3, h4 {
 }
 
 .nav {
-    width: 10%;
+    width: 20%;
 }
 
 .nav ul {
@@ -424,7 +424,15 @@ h1, h2, h3, h4 {
     }
 
     .nav {
-        width: 50%;
+        width: 90%;
+    }
+
+    .banner-principal {
+        height: 65%;
+    }
+
+    .banner-principal .slide img {
+        height: 65%;
     }
 
     .custom-img1 {
