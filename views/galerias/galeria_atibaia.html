@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classroom Website</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <script src="../../js/script.js" defer></script>
+    <script src="../../js/banner.js" defer></script>
+    <script src="../../js/galerias/lightbox_atibaia.js"></script>
+    <script src="../../js/hamburguer.js" defer></script>
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="header-left">
+            <img src="../../img/logo.png">
+            <h1 class="classroom-name"><a href="../../index.html">Instituto da Cidadania<br> José Pires</a></h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="../../index.html">
+                        <p>Início</p>
+                    </a></li>
+                <li><a href="../comoapoiar.html">
+                        <p>Como apoiar</p>
+                    </a></li>
+                <li><a href="../quemsomos.html">
+                        <p>Quem somos</p>
+                    </a></li>
+                <li><a href="../projetos.html">
+                        <p>Projetos</p>
+                    </a></li>
+                <li><a href="../contatos.html">
+                        <p>Contate-nos</p>
+                    </a></li>
+                <li><a href="https://www.instagram.com/ong_josepires/"><img src="../../img/icons/instagram.png"></a>
+                </li>
+
+            </ul>
+            <button class="menu-toggle" id="menu-btn">
+                ☰ <!-- Ícone do hambúrguer -->
+            </button>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu">
+            <ul>
+                <li><a href="../../index.html">
+                        <p>Início</p>
+                    </a></li>
+                <li><a href="../comoapoiar.html">
+                        <p>Como apoiar</p>
+                    </a></li>
+                <li><a href="../quemsomos.html">
+                        <p>Quem somos</p>
+                    </a></li>
+                <li><a href="../projetos.html">
+                        <p>Projetos</p>
+                    </a></li>
+                <li><a href="../contatos.html">
+                        <p>Contate-nos</p>
+                    </a></li>
+                <li><a href="https://www.instagram.com/ong_josepires/"><img src="../../img/icons/instagram.png">
+                        Instagram</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+
+
+    <!-- Seção da Galeria -->
+    <section class="galeria">
+        <div class="container-galeria">
+            <h2>Projeto educação Atibaia</h2>
+            <p class="descricao">Atendimento ao "Programa Melhorias da Educação- PROJETO EDUCAÇÃO Período Integral – EM
+                Pedro de Alcântara Santos Silva e EM Catarina Maria dos Reis - Polo II atendemos 240 crianças na faixa
+                etária de 6 a 12 anos de idade , ampliando a permanência dos educandos das escolas da Rede Municipal de
+                Ensino, e promovendo a educação integral dos alunos para que seja contemplada em todos os aspectos do
+                processo de ensino-aprendizagem, garantindo interações e estratégias que garantam o desenvolvimento não
+                apenas intelectual, mas também social, emocional, físico e cultural, proporcionando-lhes condições para
+                o desenvolvimento das atividades pedagógicas, culturais, artísticas, recreativas, esportivas, de lazer e
+                meio ambiente.
+            </p>
+
+            <div class="grid-fotos">
+                <div class="foto">
+                    <img src="../../img/galeria/Atibaia/WhatsApp Image 2024-09-13 at 13.43.50 (1).jpeg" alt="Foto 1"
+                        onclick="openLightbox(0)">
+                </div>
+                <div class="foto">
+                    <img src="../../img/galeria/Atibaia/WhatsApp Image 2024-09-13 at 13.43.50.jpeg" alt="Foto 2"
+                        onclick="openLightbox(1)">
+                </div>
+                <div class="foto">
+                    <img src="../../img/galeria/Atibaia/WhatsApp Image 2024-09-13 at 13.43.51 (1).jpeg" alt="Foto 3"
+                        onclick="openLightbox(2)">
+                </div>
+                <div class="foto">
+                    <img src="../../img/galeria/Atibaia/WhatsApp Image 2024-09-13 at 13.43.51 (2).jpeg" alt="Foto 4"
+                        onclick="openLightbox(3)">
+                </div>
+                <div class="foto">
+                    <img src="../../img/galeria/Atibaia/WhatsApp Image 2024-09-13 at 13.43.51 (3).jpeg" alt="Foto 5"
+                        onclick="openLightbox(4)">
+                </div>
+                <div class="foto">
+                    <img src="../../img/galeria/Atibaia/WhatsApp Image 2024-09-13 at 13.43.51.jpeg" alt="Foto 6"
+                        onclick="openLightbox(5)">
+                </div>
+                <div class="foto">
+                    <img src="../../img/galeria/Atibaia/WhatsApp Image 2024-09-13 at 13.43.52 (1).jpeg" alt="Foto 7"
+                        onclick="openLightbox(6)">
+                </div>
+                <div class="foto">
+                    <img src="../../img/galeria/Atibaia/WhatsApp Image 2024-09-13 at 13.43.52 (2).jpeg" alt="Foto 8"
+                        onclick="openLightbox(7)">
+                </div>
+                <div class="foto">
+                    <img src="../../img/galeria/Atibaia/WhatsApp Image 2024-09-13 at 13.43.52.jpeg" alt="Foto 9"
+                        onclick="openLightbox(8)">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Lightbox para Visualização das Imagens -->
+    <div id="lightbox" class="lightbox">
+        <span class="fechar" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-img" id="lightbox-img">
+        <a class="anterior" onclick="mudarImagem(-1)">&#10094;</a>
+        <a class="proximo" onclick="mudarImagem(1)">&#10095;</a>
+    </div>
+
+
+    <div class="donation-bar"></div>
+    <!-- Rodapé -->
+    <footer class="footer-view">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h4>Nossa missão</h4>
+                <p>Proporcionar educação de qualidade, apoio psicossocial, alimentação e cuidados médicos para crianças
+                    em situação de vulnerabilidade. Além de empoderar as famílias e comunidades para garantir um
+                    ambiente saudável e acolhedor para o desenvolvimento...</p>
+                <a href="../../views/quemsomos.html">Continuar lendo</a>
+            </div>
+            <div class="footer-links">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="../../index.html">
+                            <p>Início</p>
+                        </a></li>
+                    <li><a href="../../views/comoapoiar.html">
+                            <p>Como apoiar</p>
+                        </a></li>
+                    <li><a href="../../views/quemsomos.html">
+                            <p>Quem somos</p>
+                        </a></li>
+                    <li><a href="../../views/projetos.html">
+                            <p>Projetos</p>
+                        </a></li>
+                    <li><a href="../../views/contatos.html">
+                            <p>Contate-nos</p>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Entre em contato</h4>
+                <form action="#">
+                    <input type="email" placeholder="Digite seu e-mail" required>
+                    <button type="submit">Inscrever-se</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024. Todos os direitos reservados.</p>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

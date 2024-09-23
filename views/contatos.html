@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classroom Website</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../js/script.js" defer></script>
+    <script src="../js/banner.js" defer></script>
+    <script src="../js/hamburguer.js" defer></script>
+</head>
+
+<body>
+        <!-- Cabeçalho -->
+        <header class="header">
+            <div class="header-left">
+                <img src="../img/logo.png">
+                <h1 class="classroom-name"><a href="../index.html">Instituto da Cidadania<br> José Pires</a></h1>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="../index.html">
+                            <p>Início</p>
+                        </a></li>
+                    <li><a href="comoapoiar.html">
+                            <p>Como apoiar</p>
+                        </a></li>
+                    <li><a href="quemsomos.html">
+                            <p>Quem somos</p>
+                        </a></li>
+                    <li><a href="projetos.html">
+                            <p>Projetos</p>
+                        </a></li>
+                    <li><a href="contatos.html">
+                            <p>Contate-nos</p>
+                        </a></li>
+                    <li><a href="https://www.instagram.com/ong_josepires/"><img src="../img/icons/instagram.png"></a></li>
+    
+                </ul>
+                <button class="menu-toggle" id="menu-btn">
+                    ☰ <!-- Ícone do hambúrguer -->
+                </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu">
+                <ul>
+                    <li><a href="../index.html">
+                            <p>Início</p>
+                        </a></li>
+                    <li><a href="comoapoiar.html">
+                            <p>Como apoiar</p>
+                        </a></li>
+                    <li><a href="quemsomos.html">
+                            <p>Quem somos</p>
+                        </a></li>
+                    <li><a href="projetos.html">
+                            <p>Projetos</p>
+                        </a></li>
+                    <li><a href="contatos.html">
+                            <p>Contate-nos</p>
+                        </a></li>
+                    <li><a href="https://www.instagram.com/ong_josepires/"><img src="../img/icons/instagram.png">
+                            Instagram</a></li>
+                </ul>
+            </div>
+        </header>
+    
+
+    <!-- Conteúdo Principal -->
+    <main class="contato-section">
+        <!-- Seção de Contato -->
+        <h1 class="titleContato">Fale Conosco</h1>
+
+        <!-- Informações de Contato -->
+        <div class="contact-info">
+            <p><strong>Ong Instituto de Cidadania José Pires </strong></p>
+            <p><strong>E-mail:</strong> <a href="mailto:institutojosepires@gmail.com">institutojosepires@gmail.com</a>
+            </p>
+            <p><strong>Telefone:</strong> (11) 4963-1346</p>
+            <p><strong>Endereço:</strong> Rua Aurora do Norte, 115 - Vila Barros, Guarulhos - SP 07193-250</p>
+        </div>
+
+        <!-- Mapa Embutido -->
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.4035241961506!2d-46.505645324550116!3d-23.445904657360902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce8ab898af3f31%3A0x9530add6cc046873!2sR.%20Aurora%20do%20Norte%2C%20115%20-%20Vila%20Barros%2C%20Guarulhos%20-%20SP%2C%2007193-250!5e0!3m2!1spt-BR!2sbr!4v1723760408466!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <br />
+            <small>
+                <a href="https://maps.app.goo.gl/scar5v9DFirqnCqD6">
+                    Ver mapa maior
+                </a>
+            </small>
+        </div>
+
+    </main>
+
+    <div class="donation-bar"></div>
+    <!-- Rodapé -->
+    <footer class="footer-view">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h4>Nossa missão</h4>
+                <p>Proporcionar educação de qualidade, apoio psicossocial, alimentação e cuidados médicos para crianças
+                    em situação de vulnerabilidade. Além de empoderar as famílias e comunidades para garantir um
+                    ambiente saudável e acolhedor para o desenvolvimento...</p>
+                <a href="../views/quemsomos.html">Continuar lendo</a>
+            </div>
+            <div class="footer-links">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="../index.html">
+                            <p>Início</p>
+                        </a></li>
+                    <li><a href="../../views/comoapoiar.html">
+                            <p>Como apoiar</p>
+                        </a></li>
+                    <li><a href="../../views/quemsomos.html">
+                            <p>Quem somos</p>
+                        </a></li>
+                    <li><a href="../../views/projetos.html">
+                            <p>Projetos</p>
+                        </a></li>
+                    <li><a href="../../views/contatos.html">
+                            <p>Contate-nos</p>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Entre em contato</h4>
+                <form action="#">
+                    <input type="email" placeholder="Digite seu e-mail" required>
+                    <button type="submit">Inscrever-se</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024. Todos os direitos reservados.</p>
+
+        </div>
+    </footer>
+</body>
+
+</html>

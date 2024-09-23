@@ -1,0 +1,19 @@
+- Lista de tarefas:
+
+ Urgente:
+	- Ong Jose pires:
+		- Mudar header para dropMenu;
+		- responsividade pagina das creches;	
+
+
+ Precisa fazer:
+
+	- Pedacinho dos sonhos:
+
+		- Colocar espaço da ultima atualização do transparencia;
+		- Adicionar arquivos restantes;
+
+	- Criar conta hostingetor;
+
+		- Colocar site do jose Pires;
+	
